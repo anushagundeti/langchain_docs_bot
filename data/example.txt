@@ -1,0 +1,5 @@
+Title: Introduction to Artificial Intelligence
+
+Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. ...
+
+Popular AI models include GPT-4, BERT, and ResNet.
