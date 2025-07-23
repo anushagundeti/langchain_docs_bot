@@ -46,48 +46,28 @@ Create a `.env` file in the root directory:
 ```ini
 OPENROUTER_API_KEY=your_openrouter_api_key_here
 
-📝 Add Your Document
+## 📝 Add Your Document
 Place your .txt file inside the data/ folder:
 
-bash
-Copy
-Edit
-data/example.txt
 You can write anything — this file is the "brain" for your chatbot.
 
-📥 Ingest the File
-bash
-Copy
-Edit
-python ingest.py
-This will:
+## 📥 Commands to execute ingest file and start server
 
-Load the text
+- python ingest.py
+- uvicorn main:app --reload
 
-Embed it using HuggingFace
 
-Index it into FAISS
+### ✅ Test the API (Postman or curl)
 
-🧠 Run the API
-bash
-Copy
-Edit
-uvicorn main:app --reload
-✅ Test the API (Postman or curl)
-Request
-http
-Copy
-Edit
 POST http://localhost:8000/ask
 Content-Type: application/json
 
 {
   "question": "What is this document about?"
 }
+
 Response
-json
-Copy
-Edit
+
 {
   "question": "What is this document about?",
   "answer": "This document discusses artificial intelligence and machine learning.",
